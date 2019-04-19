@@ -43,9 +43,10 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
 <!--              <li class="active"><a href="#">Project Name</a></li> -->
-              <li><a href="members.html">Members</a></li> 
+              <li><a href="members.html">Members</a></li>
               <li><a href="publications.html">Publications</a></li>
               <li><a href="resources.html">Resources</a></li>
+              <li><a href="usage.html">Projects using PISCES</a></li>
             </ul>
 <!--
             <ul class="nav navbar-nav navbar-right">
@@ -63,14 +64,14 @@
         <p><a class="btn btn-lg btn-primary" href="https://github.com/P4-vSwitch" role="button">View on GitHub &raquo;</a></p>
       </div>
     </div> <!-- /container -->
-      
+
     <div class="container">
       <div class="row">
         <div class="col-md-7">
           <h2>What is PISCES?</h2>
-          <p>Hypervisors use software switches to steer packets to and from virtual machines (VMs). These switches frequently need upgrading and customization---to support new protocol headers or encapsulations for tunneling and overlays, to improve measurement and debugging features, and even to add middlebox- like functions. Software switches are typically based on a large body of code, including kernel code, and changing the switch is a formidable undertaking requiring domain mastery of network protocol design and developing, testing, and maintaining a large, complex codebase. Changing how a software switch forwards packets should not require intimate knowledge of its implementation. Instead, it should be possible to specify how packets are processed and forwarded in a high-level domain-specific language (DSL) such as P4, and compiled to run on a software switch. We present PISCES, a software switch derived from Open vSwitch (OVS), a hard-wired hypervisor switch, whose behavior is customized using P4. PISCES is not hard-wired to specific protocols; this independence makes it easy to add new features. We also show how the compiler can analyze the high-level specification to optimize forwarding performance. Our evaluation shows that PISCES performs comparably to OVS and that PISCES programs are about 40 times shorter than equivalent changes to OVS source code.</p>        
+          <p>Hypervisors use software switches to steer packets to and from virtual machines (VMs). These switches frequently need upgrading and customization---to support new protocol headers or encapsulations for tunneling and overlays, to improve measurement and debugging features, and even to add middlebox- like functions. Software switches are typically based on a large body of code, including kernel code, and changing the switch is a formidable undertaking requiring domain mastery of network protocol design and developing, testing, and maintaining a large, complex codebase. Changing how a software switch forwards packets should not require intimate knowledge of its implementation. Instead, it should be possible to specify how packets are processed and forwarded in a high-level domain-specific language (DSL) such as P4, and compiled to run on a software switch. We present PISCES, a software switch derived from Open vSwitch (OVS), a hard-wired hypervisor switch, whose behavior is customized using P4. PISCES is not hard-wired to specific protocols; this independence makes it easy to add new features. We also show how the compiler can analyze the high-level specification to optimize forwarding performance. Our evaluation shows that PISCES performs comparably to OVS and that PISCES programs are about 40 times shorter than equivalent changes to OVS source code.</p>
         </div>
-          
+
         <div class="col-md-5">
           <!-- 4:3 aspect ratio -->
           <div class="span4">
@@ -79,12 +80,12 @@
           </div>
         </div>
       </div>
-          
+
       <div class="row">
 
         <div class="col-md-4">
           <h2>Vagrant Setup</h2>
-          <p>We provide a VM-based simulation environment for PISCES using Vagrant.</p>  
+          <p>We provide a VM-based simulation environment for PISCES using Vagrant.</p>
           <p><a class="btn btn-default" href="https://github.com/P4-vSwitch/vagrant" role="button">
             Instructions &raquo;</a>
           </p>
@@ -99,16 +100,16 @@
               <br>
               <b>Contact Email</b>: mshahbaz at cs.princeton.edu
             </p>
-          <p><a class="btn btn-default" href="./members.html" role="button">View other members &raquo;</a></p> 
+          <p><a class="btn btn-default" href="./members.html" role="button">View other members &raquo;</a></p>
         </div>
       </div>
-        
+
       <hr>
       <footer>
         <p>&copy; Princeton University, 2016</p>
-      </footer>    
+      </footer>
     </div>
-    
+
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -116,7 +117,7 @@
                 (i[r].q = i[r].q || []).push(arguments)}, i[r].l = 1 * new Date();
             a = s.createElement(o), m = s.getElementsByTagName(o)[0];
             a.async = 1;
-            a.src = g; 
+            a.src = g;
             m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
